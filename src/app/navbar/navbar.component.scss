@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar-container {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  padding: 20px;
+  border: .8px solid rgb(51, 51, 51);
+}
+
+.nav-title {
+  font-size: 1.5rem;
+  color: white;
+  display: flex;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.nav-center {
+  flex: .7;
+}
+
+.nav-tabs-container {
+  flex: .6;
+}
+
+.kelton-dot {
+  height: 8px;
+  width: 8px;
+  border-radius: 50%;
+  background-color: white;
+  margin-top: 3px;
+  margin-left: 5px;
+}
+
+.nav-tabs-list {
+  display: flex;
+  list-style: none;
+  justify-content: flex-end;
+}
+
+.nav-tab {
+  margin-right: 20px;
+}
+
+.small {
+  display: none;
+}
+
+@media screen and (max-width: 1000px) {
+  .full {
+    display: none;
+  }
+
+  .small {
+    display: block;
+  }
+}
