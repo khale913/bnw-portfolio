@@ -14,7 +14,7 @@ export class HomepageComponent implements OnInit {
     // stops the timeout
     setTimeout(() => {
       this.splashScreenStateService.stop();
-    }, 2);
+    }, 1);
   }
 
 }
