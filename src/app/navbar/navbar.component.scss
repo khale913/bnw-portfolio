@@ -58,6 +58,38 @@
   display: none;
 }
 
+/* hover styles */
+
+.link-wrapper {
+  position: relative;
+  display: block;
+  padding: 0px 0;
+  cursor: pointer;
+}
+
+
+.hover-1 {
+  &:after {
+      content:'';
+      position: absolute;
+      width: 70%;
+      height: 1px;
+      bottom: 0;
+      left: 0;
+      background-color: white;
+      transform: scaleX(0);
+      transform-origin: bottom right;
+      transition: transform 0.3s;
+  }
+
+  &:hover {
+      &:after {
+          transform-origin: bottom left;
+          transform: scaleX(1);
+      }
+  }
+}
+
 @media screen and (max-width: 1000px) {
   .full {
     display: none;
