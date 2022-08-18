@@ -1,13 +1,13 @@
 .landing-container {
   height: 100vh;
-  background-color: black;
+  background-color: #0D0D0D;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
 
 .top-text {
-  margin-top: 150px;
+  margin-top: 120px;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -25,7 +25,7 @@
 .intro-text {
   font-family: 'Poppins', sans-serif;
   font-weight: 200;
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   line-height: 23px;
   color: white;
   text-align: left;
@@ -33,11 +33,11 @@
 }
 
 .circle {
-  height: 75px;
-  width: 75px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
   background-color: white;
-  margin: 30px 50px;
+  margin: 40px 50px;
 }
 
 .wrapper {
@@ -52,14 +52,14 @@
   white-space: nowrap;
   overflow: hidden;
   display: inline-block;
-  animation: marquee 20s linear infinite;
+  animation: marquee 15s linear infinite;
 }
 
 .marquee div {
   font-family: 'Poppins', sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   color: white;
-  font-size: 200px;
+  font-size: 13em;
   display: inline-block;
 }
 
@@ -70,5 +70,88 @@
   }
   100% {
     transform: translate3d(-50%, 0, 0);
+  }
+}
+
+
+@media screen and (max-width: 1100px) {
+  .intro-text {
+    font-size: 1rem;
+  }
+
+  .marquee div {
+    font-size: 11em;
+  }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+    margin: 25px 40px;
+  }
+
+}
+
+@media screen and (max-width: 800px) {
+  .marquee div {
+    font-size: 9em;
+    margin-bottom: 10px;
+  }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+    margin: 0px 40px 15px 40px !important;
+  }
+
+  .marquee {
+    animation: marquee 12s linear infinite;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .left-container {
+  display: none;
+  }
+
+  .right-container {
+    margin-left: 40px;
+  }
+
+  .marquee div {
+    font-size: 6em;
+    margin-bottom: 1.5rem;
+  }
+
+  .circle {
+    height: 70px;
+    width: 70px;
+    margin: 0 20px;
+    margin-bottom: 0px !important;
+  }
+
+  .intro-text {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .marquee div {
+    font-size: 7em;
+    margin-bottom: 2rem;
+  }
+
+  .circle {
+    height: 45px;
+    width: 45px;
+    margin: 0 20px;
+    margin-bottom: 6px !important;
+  }
+
+  .intro-text {
+    width: 70%;
+  }
+
+  .marquee {
+    animation: marquee 10s linear infinite;
   }
 }
