@@ -23,9 +23,9 @@ export class AppComponent {
 
   }
 
-  moveFunction(e: any) {
-    console.log(e)
-  }
+  // moveFunction(e: any) {
+  //   console.log(e)
+  // }
 
 
 
