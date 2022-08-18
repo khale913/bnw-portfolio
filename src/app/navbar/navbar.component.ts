@@ -24,6 +24,13 @@ export class NavbarComponent implements OnInit {
       } else {
         this.dayTime = 'AM';
       }
+      if (this.seconds < 10) {
+        this.seconds = '0' + this.seconds;
+      }
+
+      if (this.hours < 10) {
+        this.hours = '0' + this.hours;
+      }
 
     }, 500)
     console.log(this.now);
