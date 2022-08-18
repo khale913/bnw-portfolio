@@ -57,7 +57,7 @@
 
 .marquee div {
   font-family: 'Poppins', sans-serif;
-  font-weight: 400;
+  font-weight: 500;
   color: white;
   font-size: 13em;
   display: inline-block;
@@ -175,6 +175,6 @@
 .hoverText {
   height: 60px;
   width: 60px;
-  border: 2px solid rgba(255, 0, 0, 0.52);
-  background-color: rgba(255, 0, 0, 0.52);
+  border: 2px solid pink;
+  background-color: pink;
 }
