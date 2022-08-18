@@ -1,5 +1,74 @@
 .landing-container {
   height: 100vh;
   background-color: black;
-  margin-top: 69.09px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.top-text {
+  margin-top: 150px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.left-container {
+  flex: 1;
+}
+
+.right-container {
+  flex: 1;
+}
+
+.intro-text {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 200;
+  font-size: 1.1rem;
+  line-height: 23px;
+  color: white;
+  text-align: left;
+  width: 40%;
+}
+
+.circle {
+  height: 75px;
+  width: 75px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 30px 50px;
+}
+
+.wrapper {
+  max-width: 100%;
+  overflow: hidden;
+  // position: absolute;
+  // bottom: 0;
+  margin-bottom: -50px;
+}
+
+.marquee {
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation: marquee 20s linear infinite;
+}
+
+.marquee div {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  color: white;
+  font-size: 200px;
+  display: inline-block;
+}
+
+
+@keyframes marquee {
+  0% {
+    transform: translate3d(0, 0, 0);
+  }
+  100% {
+    transform: translate3d(-50%, 0, 0);
+  }
 }
