@@ -1,5 +1,5 @@
 .about-container {
-  height: 100vh;
+  // height: 100vh;
   color: black;
   margin-left: 3rem;
 }
@@ -85,11 +85,71 @@
 
 }
 
+@media only screen and (max-width: 750px) {
+  .about-container {
+    margin-left: 0rem;
+  }
+
+  .about-header {
+    margin-top: 60px;
+    margin-bottom: 30px;
+  }
+
+  .about-description {
+    margin-left: 2.5rem;
+    width: 95%;
+  }
+
+  .slideUp {
+    font-size: 2.5rem;
+  }
+
+  .about-li {
+    font-size: 1.9rem;
+    line-height: 2rem;
+    margin-bottom: 50px;
+  }
+
+}
+
 
 
 @media only screen and (max-width: 600px) {
   .about-header, .text, .slideDown, .slideUp {
-    font-size: 15px;
+    font-size: 2rem;
+    margin-left: 1rem;
+  }
+
+  .about-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
   }
 }
 
+@media only screen and (max-width: 500px) {
+
+  .about-container {
+    margin-left: 2rem;
+  }
+
+  .about-header, .text, .slideDown, .slideUp {
+    font-size: 2rem;
+    margin-left: 0rem;
+  }
+
+  .about-header {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .about-li {
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    margin-bottom: 50px;
+  }
+
+  .about-description {
+    margin-left: 0;
+    width: 100%;
+  }
+}
