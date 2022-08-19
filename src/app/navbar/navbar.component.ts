@@ -32,6 +32,10 @@ export class NavbarComponent implements OnInit {
         this.hours = '0' + this.hours;
       }
 
+      if (this.minutes < 10) {
+        this.minutes = '0' + this.minutes;
+      }
+
     }, 500)
     console.log(this.now);
   }

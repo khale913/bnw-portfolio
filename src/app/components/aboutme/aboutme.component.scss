@@ -1,14 +1,14 @@
 .about-container {
   // height: 100vh;
   color: black;
-  margin-left: 3rem;
+  padding-left: 3rem;
 }
 
 .about-header {
   position: relative;
   overflow: hidden;
-  margin-top: 80px;
-  margin-bottom: 40px;
+  padding-top: 80px;
+  padding-bottom: 40px;
 }
 
 .slideUp {
@@ -32,7 +32,7 @@
 
 
 .about-description {
-  margin-left: 2.5rem;
+  padding-left: 2.5rem;
   width: 70%;
 }
 
@@ -46,30 +46,30 @@
   font-weight: 200;
   font-size: 3rem;
   line-height: 3.2rem;
-  margin-bottom: 50px;
+  padding-bottom: 50px;
 }
 
 @media only screen and (max-width: 1200px) {
   .about-li {
     font-size: 2.5rem;
     line-height: 3.2rem;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
 }
 
 @media only screen and (max-width: 1000px) {
   .about-container {
-    margin-left: 0rem;
+    padding-left: 0rem;
   }
 
   .about-header {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 
   .about-description {
-    margin-left: 2.5rem;
+    padding-left: 2.5rem;
     width: 85%;
   }
 
@@ -80,23 +80,23 @@
   .about-li {
     font-size: 2.5rem;
     line-height: 2.5rem;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
 }
 
 @media only screen and (max-width: 750px) {
   .about-container {
-    margin-left: 0rem;
+    padding-left: 0rem;
   }
 
   .about-header {
-    margin-top: 60px;
-    margin-bottom: 30px;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
 
   .about-description {
-    margin-left: 2.5rem;
+    padding-left: 2.5rem;
     width: 95%;
   }
 
@@ -107,7 +107,7 @@
   .about-li {
     font-size: 1.9rem;
     line-height: 2rem;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
 }
@@ -117,39 +117,39 @@
 @media only screen and (max-width: 600px) {
   .about-header, .text, .slideDown, .slideUp {
     font-size: 2rem;
-    margin-left: 1rem;
+    padding-left: 1rem;
   }
 
   .about-header {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 }
 
 @media only screen and (max-width: 500px) {
 
   .about-container {
-    margin-left: 2rem;
+    padding-left: 2rem;
   }
 
   .about-header, .text, .slideDown, .slideUp {
     font-size: 2rem;
-    margin-left: 0rem;
+    padding-left: 0rem;
   }
 
   .about-header {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
   }
 
   .about-li {
     font-size: 1.8rem;
     line-height: 1.8rem;
-    margin-bottom: 50px;
+    padding-bottom: 50px;
   }
 
   .about-description {
-    margin-left: 0;
+    padding-left: 0;
     width: 100%;
   }
 }
