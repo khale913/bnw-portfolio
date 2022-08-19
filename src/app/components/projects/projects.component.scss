@@ -1,0 +1,98 @@
+.projects-container {
+  margin-top: 100px;
+  color: black;
+  margin-left: 3rem;
+}
+
+.projects-header {
+  position: relative;
+  overflow: hidden;
+  margin-top: 80px;
+  margin-bottom: 40px;
+}
+
+.slideUp {
+  font-family: 'Poppins', sans-serif;
+  position: relative;
+  font-size: 3.5rem;
+  font-weight: 500;
+  opacity:0;
+}
+
+.slideUp {
+  top:40px;
+  left:10px;
+  animation: slideUp ease .5s forwards 1.2s;
+}
+
+
+@keyframes slideUp {
+  0% {transform: translateY(0);}
+  100% {transform: translateY(-40px);opacity:1;}
+}
+
+
+.projects-entire-container {
+  display: flex;
+  margin: 30px 40px;
+}
+
+.project-view-container {
+  flex: 1;
+}
+
+.project-name-container {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.caption-column {
+  font-family: 'Poppins', sans-serif;
+  font-size: .95rem;
+  font-weight: 200;
+  text-align: right;
+  width: 30%;
+  margin-bottom: 80px;
+}
+
+.project-name h2{
+  font-size: 1.4rem;
+  font-weight: 200;
+  color: rgb(190, 190, 190);
+}
+
+.dark h2{
+  color: rgb(158, 158, 158);
+}
+
+.darker h2 {
+  color: rgb(113, 113, 113);
+}
+
+.darkest h2 {
+  color: rgb(52, 52, 52);
+}
+
+.projectOne {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid rgb(215, 215, 215);
+  border-bottom: 2px solid rgb(212, 212, 212);
+}
+
+.projectTwo {
+  font-family: 'Poppins', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 50px 0;
+  border-top: 1px solid rgb(215, 215, 215);
+  border-bottom: 2px solid rgb(212, 212, 212);
+}
