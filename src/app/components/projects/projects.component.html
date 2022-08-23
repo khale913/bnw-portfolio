@@ -13,13 +13,13 @@
         <p>Here are some of the works done (c.) 2020-2022 within App and Web Design.</p>
       </div>
 
-      <div class="projectOne">
-        <div class="project-name">
+      <div class="projectOne" (mouseenter)="hoverFunction('one', true)" (mouseleave)="hoverFunction('one', false)">
+        <div class="project-name" [ngClass]="{'hoverProject' : mouseHoverProjectOne === true}">
           <h2>La Hacienda</h2>
         </div>
 
         <div class="project-type">
-          <div class="type">
+          <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectOne === true}">
             <p>Web Design</p>
             <p>/ 2022</p>
           </div>
@@ -27,13 +27,13 @@
         </div>
       </div>
 
-      <div class="projectTwo">
-        <div class="project-name dark">
+      <div class="projectTwo" (mouseenter)="hoverFunction('two', true)" (mouseleave)="hoverFunction('two', false)">
+        <div class="project-name dark" [ngClass]="{'hoverProject' : mouseHoverProjectTwo === true}">
           <h2>MJ Builders</h2>
         </div>
 
         <div class="project-type">
-          <div class="type">
+          <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectTwo === true}">
             <p>Web Design</p>
             <p>/ 2022</p>
           </div>
@@ -41,13 +41,13 @@
         </div>
       </div>
 
-      <div class="projectTwo">
-        <div class="project-name darker">
+      <div class="projectTwo" (mouseenter)="hoverFunction('three', true)" (mouseleave)="hoverFunction('three', false)">
+        <div class="project-name darker" [ngClass]="{'hoverProject' : mouseHoverProjectThree === true}">
           <h2>FUTURE page</h2>
         </div>
 
         <div class="project-type">
-          <div class="type">
+          <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectThree === true}">
             <p>Web Design</p>
             <p>/ 2022</p>
           </div>
@@ -55,13 +55,13 @@
         </div>
       </div>
 
-      <div class="projectTwo">
-        <div class="project-name darkest">
+      <div class="projectTwo" (mouseenter)="hoverFunction('four', true)" (mouseleave)="hoverFunction('four', false)">
+        <div class="project-name darkest" [ngClass]="{'hoverProject' : mouseHoverProjectFour === true}">
           <h2>react project</h2>
         </div>
 
         <div class="project-type">
-          <div class="type">
+          <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectFour === true}">
             <p>Web Design</p>
             <p>/ 2022</p>
           </div>
