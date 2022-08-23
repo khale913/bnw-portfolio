@@ -1,5 +1,5 @@
 .projects-container {
-  background-color: rgb(240, 240, 240);
+  background-color: white;
   padding-top: 100px;
   color: black;
   padding-left: 3rem;
@@ -125,4 +125,11 @@
 .hoverProjectright {
   transition: .3s ease-in-out;
   margin-right: 5rem;
+}
+
+.project-img  img{
+  object-fit: cover;
+  height: 400px;
+  width: 80%;
+  border-radius: 15px;
 }
