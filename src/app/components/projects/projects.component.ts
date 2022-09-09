@@ -10,6 +10,10 @@ export class ProjectsComponent implements OnInit {
   mouseHoverProjectTwo: boolean = false;
   mouseHoverProjectThree: boolean = false;
   mouseHoverProjectFour: boolean = false;
+  mouseHoverProjectFive: boolean = false;
+
+  activeProjectHover: string = '';
+  activeProjectClass: string = '';
   constructor() { }
 
   ngOnInit(): void {
@@ -18,15 +22,28 @@ export class ProjectsComponent implements OnInit {
   hoverFunction(project: any, bool: boolean) {
     if (project === 'one') {
       this.mouseHoverProjectOne = bool;
+      this.activeProjectHover = '../../../assets/projectImages/laHaciendaPortfolio.jpg';
+      this.activeProjectClass = 'project-one'
     }
     if (project === 'two') {
       this.mouseHoverProjectTwo = bool;
+      this.activeProjectHover = '../../../assets/projectImages/mjbuildersPorfolio.jpg';
+      this.activeProjectClass = 'project-two'
     }
     if (project === 'three') {
       this.mouseHoverProjectThree = bool;
+      this.activeProjectHover = '../../../assets/projectImages/gpt3portfolio.jpg';
+      this.activeProjectClass = 'project-three';
     }
     if (project === 'four') {
       this.mouseHoverProjectFour = bool;
+      this.activeProjectHover = '../../../assets/projectImages/gerichtPortfolio.jpg';
+      this.activeProjectClass = 'project-four'
+    }
+    if (project === 'five') {
+      this.mouseHoverProjectFive = bool;
+      this.activeProjectHover = '../../../assets/projectImages/trvlporfolio.jpg';
+      this.activeProjectClass = 'project-five'
     }
   }
 

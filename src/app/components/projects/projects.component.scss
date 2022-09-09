@@ -35,7 +35,8 @@
 
 .projects-entire-container {
   display: flex;
-  padding: 30px 40px;
+  padding: 30px 40px 30px 0;
+
 }
 
 .project-view-container {
@@ -128,8 +129,35 @@
 }
 
 .project-img  img{
-  object-fit: cover;
-  height: 400px;
-  width: 80%;
+  // object-fit: cover;
+  // height: 350px;
+  // width: 100%;
   border-radius: 15px;
+  position: relative;
+  z-index: 2;
+  width: 60%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.project-one {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.project-two {
+  margin-top: 10rem !important;
+}
+
+.project-three {
+  margin-top: 20rem !important;
+}
+
+.project-four {
+  margin-top: 28rem !important;
+}
+
+.project-five {
+  margin-top: 38rem !important;
 }

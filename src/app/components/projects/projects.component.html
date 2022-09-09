@@ -6,8 +6,9 @@
   <div class="projects-entire-container">
 
     <div class="project-view-container">
-      <div class="project-img">
-        <img src="../../../assets/laHaciendaImg2.png" alt="">
+      <div class="project-img"
+        *ngIf="mouseHoverProjectOne || mouseHoverProjectTwo || mouseHoverProjectThree || mouseHoverProjectFour || mouseHoverProjectFive">
+        <img [ngClass]="activeProjectClass" src="{{activeProjectHover}}" alt="">
       </div>
     </div>
 
@@ -66,6 +67,20 @@
 
         <div class="project-type">
           <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectFour === true}">
+            <p>Web Design</p>
+            <p>/ 2022</p>
+          </div>
+          <div class="arrow"></div>
+        </div>
+      </div>
+
+      <div class="projectTwo" (mouseenter)="hoverFunction('five', true)" (mouseleave)="hoverFunction('five', false)">
+        <div class="project-name darkest" [ngClass]="{'hoverProject' : mouseHoverProjectFive === true}">
+          <h2>TRVL</h2>
+        </div>
+
+        <div class="project-type">
+          <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectFive === true}">
             <p>Web Design</p>
             <p>/ 2022</p>
           </div>
