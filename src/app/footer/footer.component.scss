@@ -1,0 +1,19 @@
+.footer-container {
+  background-color: black;
+}
+
+.inner-container {
+  border-top: 1px solid grey;
+  margin: 0 3rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 4rem 0;
+  color: white;
+}
+
+.footer-links {
+  text-decoration: none;
+  color: white;
+  font-family: 'Poppins', sans-serif;
+
+}
