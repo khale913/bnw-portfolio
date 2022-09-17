@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SplashScreenStateService } from '../splash-screen-state.service';
+import { ViewportScroller } from "@angular/common";
 
 @Component({
   selector: 'app-homepage',
@@ -8,7 +9,7 @@ import { SplashScreenStateService } from '../splash-screen-state.service';
 })
 export class HomepageComponent implements OnInit {
 
-  constructor(private splashScreenStateService: SplashScreenStateService) { }
+  constructor(private splashScreenStateService: SplashScreenStateService, private scroller: ViewportScroller) { }
 
   ngOnInit(): void {
     // stops the timeout
@@ -16,5 +17,6 @@ export class HomepageComponent implements OnInit {
       this.splashScreenStateService.stop();
     }, 1);
   }
+
 
 }

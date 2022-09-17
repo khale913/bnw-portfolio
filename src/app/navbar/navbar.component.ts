@@ -47,4 +47,12 @@ export class NavbarComponent implements OnInit {
     this.mouseHoverEvent = e;
     console.log(this.mouseHoverEvent)
   }
+
+  navigatePage(page: any) {
+    document.getElementById(page)?.scrollIntoView({
+      behavior: "smooth",
+      block: "start",
+      inline: "nearest"
+    });
+  }
 }
