@@ -99,12 +99,26 @@
   }
 }
 
+.mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1000px) {
-  .full {
+  .full-screen {
     display: none;
+  }
+
+  .mobile {
+    display: block;
   }
 
   .small {
     display: block;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .nav-title {
+    flex: .6;
   }
 }
