@@ -25,10 +25,41 @@
         <li class="nav-tab full hover-1" (click)="navigatePage('targetContact')">Contact</li>
       </div>
       <div class="link-wrapper mobile">
-        <li class="nav-tab full hover-1">Menu</li>
+        <li class="nav-tab full hover-1" (click)="openOverlayMenu()">Menu</li>
       </div>
 
     </ul>
   </div>
 
+</div>
+
+<div id="myNav" class="overlay" [ngClass]="{ 'overlay-open': openOverlay === true}">
+  <a href="javascript:void(0)" class="closebtn" (click)="closeModal()">&times;</a>
+  <!-- <div class="overlay-content">
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Clients</a>
+    <a href="#">Contact</a>
+  </div> -->
+  <div class="overlay-container">
+    <div class="overlay-tabs">
+      <h2 class="mobile-tab" (click)="navigatePage('targetHome')">Home</h2>
+      <h2 class="mobile-tab" (click)="navigatePage('targetAbout')">About</h2>
+      <h2 class="mobile-tab" (click)="navigatePage('targetProjects')">Work</h2>
+      <h2 class="mobile-tab" (click)="navigatePage('targetSkills')">Skills</h2>
+      <h2 class="mobile-tab" (click)="navigatePage('targetContact')">Contact</h2>
+    </div>
+    <div class="overlay-footer">
+      <div class="footer-div">
+        <h2 style="display: flex">GitHub <h2 class="right-arrow">&#x2192;</h2>
+        </h2>
+
+        <h2 style="display: flex">LinkedIn <h2 class="right-arrow">&#x2192;</h2>
+        </h2>
+
+        <h2 style="display: flex">Instagram <h2 class="right-arrow">&#x2192;</h2>
+        </h2>
+      </div>
+    </div>
+  </div>
 </div>

@@ -12,6 +12,8 @@ export class NavbarComponent implements OnInit {
   minutes: any;
   seconds: any;
   dayTime: string = '';
+  openOverlay: boolean = false;
+
   constructor() {
     setInterval(() => {
       this.now = new Date();
@@ -54,5 +56,16 @@ export class NavbarComponent implements OnInit {
       block: "start",
       inline: "nearest"
     });
+    this.openOverlay = false;
   }
+
+  openOverlayMenu() {
+    this.openOverlay = !this.openOverlay;
+  }
+
+  closeModal() {
+    this.openOverlay = false;
+  }
+
+
 }
