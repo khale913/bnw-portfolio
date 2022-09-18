@@ -161,3 +161,30 @@
 .project-five {
   margin-top: 38rem !important;
 }
+
+@media screen and (max-width: 1000px) {
+  .project-view-container {
+    display: none;
+  }
+
+  .hoverProject {
+    padding-left: 0;
+    transition: none;
+  }
+
+  .hoverProjectright {
+    transition: .3s ease-in-out;
+    margin-right: 0;
+  }
+  .type {
+    margin-right:0rem;
+    -webkit-transition: all 0s linear;
+    -moz-transition: all 0s linear;
+    -o-transition: all 0s linear;
+    transition: all 0s linear;
+  }
+
+  .caption-column {
+    width: 75%;
+  }
+}
