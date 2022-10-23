@@ -22,7 +22,7 @@ export class ProjectsComponent implements OnInit {
   hoverFunction(project: any, bool: boolean) {
     if (project === 'one') {
       this.mouseHoverProjectOne = bool;
-      this.activeProjectHover = '../../../assets/projectImages/laHaciendaPortfolio.jpg';
+      this.activeProjectHover = '../../../assets/projectImages/wolfcycle-mobile.png';
       this.activeProjectClass = 'project-one'
     }
     if (project === 'two') {

@@ -9,6 +9,8 @@
   overflow: hidden;
   padding-top: 80px;
   padding-bottom: 40px;
+    cursor: default;
+
 }
 
 .slideUp {
@@ -34,11 +36,15 @@
 .about-description {
   padding-left: 2.5rem;
   width: 70%;
+  cursor: default;
+
 }
 
 .name {
   // border-bottom: 1px solid black;
   font-weight: 500;
+  cursor: default;
+
 }
 
 .about-li {
@@ -47,6 +53,7 @@
   font-size: 3rem;
   line-height: 3.2rem;
   padding-bottom: 50px;
+  cursor: default;
 }
 
 @media only screen and (max-width: 1200px) {
