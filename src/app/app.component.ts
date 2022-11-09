@@ -6,7 +6,7 @@ import { Component, HostListener, Renderer2 } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'bnw-portfolio';
+  title = 'kelton-portfolio';
   cursor = document.getElementsByClassName('cursor');
 
   constructor(private renderer: Renderer2) {

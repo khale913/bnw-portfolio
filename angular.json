@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "bnw-portfolio": {
+    "kelton-portfolio": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -20,7 +20,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/bnw-portfolio",
+            "outputPath": "dist/kelton-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -72,10 +72,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "bnw-portfolio:build:production"
+              "browserTarget": "kelton-portfolio:build:production"
             },
             "development": {
-              "browserTarget": "bnw-portfolio:build:development"
+              "browserTarget": "kelton-portfolio:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -83,7 +83,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "bnw-portfolio:build"
+            "browserTarget": "kelton-portfolio:build"
           }
         },
         "test": {
@@ -107,5 +107,5 @@
       }
     }
   },
-  "defaultProject": "bnw-portfolio"
+  "defaultProject": "kelton-portfolio"
 }
