@@ -134,6 +134,10 @@
   .marquee {
     animation: marquee 12s linear infinite;
   }
+
+  .cursor {
+    display: none;
+  }
 }
 
 @media screen and (max-width: 600px) {
