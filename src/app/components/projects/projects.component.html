@@ -64,10 +64,13 @@
           </div>
         </div>
       </a>
-      <div class="projectTwo" (mouseenter)="hoverFunction('four', true)" (mouseleave)="hoverFunction('four', false)">
+      <div class="projectTwo in-progress" (mouseenter)="hoverFunction('four', true)"
+        (mouseleave)="hoverFunction('four', false)">
         <div class="project-name darkest" [ngClass]="{'hoverProject' : mouseHoverProjectFour === true}">
           <h2>La Hacienda</h2>
         </div>
+
+        <h2>Coming Soon!</h2>
 
         <div class="project-type">
           <div class="type" [ngClass]="{'hoverProjectright' : mouseHoverProjectFour === true}">
