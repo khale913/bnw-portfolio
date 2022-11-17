@@ -167,6 +167,12 @@
   margin-top: 38rem !important;
 }
 
+@media screen and (max-width: 600px) {
+.in-progress_text {
+  font-size: .9rem;
+}
+}
+
 @media screen and (max-width: 1000px) {
   .project-view-container {
     display: none;
